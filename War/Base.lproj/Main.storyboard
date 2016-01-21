@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="War" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,194 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c60-OT-Wl5">
+                                <rect key="frame" x="214" y="408" width="170" height="141"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="54"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <segue destination="DMU-uw-7RP" kind="show" id="2GU-3e-3Ub"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="WAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYX-wH-ZRy">
+                                <rect key="frame" x="150" y="68" width="300" height="138"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="121"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-fR-1c6">
+                                <rect key="frame" x="252" y="281" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39607846736907959" green="0.23921570181846619" blue="0.015686275437474251" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="LYX-wH-ZRy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1r5-B0-nHW"/>
+                            <constraint firstItem="c60-OT-Wl5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pb5-tr-ppN"/>
+                            <constraint firstItem="ZWS-fR-1c6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wuE-jq-206"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="entername" destination="ZWS-fR-1c6" id="OaK-UM-HCX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52" y="282"/>
+        </scene>
+        <!--View2-->
+        <scene sceneID="AF9-wV-01i">
+            <objects>
+                <viewController id="DMU-uw-7RP" customClass="View2" customModule="War" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="neB-rh-C6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqN-4E-I3q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jst-ZH-hGv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ni-Y4-s30">
+                                <rect key="frame" x="225" y="64" width="150" height="223"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="78k-hC-zz7">
+                                        <rect key="frame" x="18" y="54" width="115" height="115"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZo-J3-wqR">
+                                        <rect key="frame" x="8" y="8" width="46" height="53"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq8-eh-5fG">
+                                        <rect key="frame" x="96" y="162" width="46" height="53"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-Rh-Ps4">
+                                <rect key="frame" x="225" y="300" width="150" height="223"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAO-3D-DFR">
+                                        <rect key="frame" x="8" y="8" width="46" height="53"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6X-fv-1ua">
+                                        <rect key="frame" x="18" y="54" width="115" height="115"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4En-aT-uoI">
+                                        <rect key="frame" x="96" y="162" width="46" height="53"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vbD-tY-tHA" appends="YES" id="dNW-Wc-25c"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-D6-Sws">
+                                <rect key="frame" x="376" y="384" width="57" height="55"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coh-7G-f7I" userLabel=" score top">
+                                <rect key="frame" x="166" y="148" width="57" height="55"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzA-i0-che" userLabel="Center Up Down">
+                                <rect key="frame" x="276" y="286" width="47" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1np-Qr-V3U">
+                                <rect key="frame" x="94" y="384" width="110" height="55"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Computer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7og-9R-cMs" userLabel="Name top">
+                                <rect key="frame" x="376" y="148" width="128" height="55"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cards in Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi8-Pl-mAt">
+                                <rect key="frame" x="376" y="242" width="100" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzc-kk-tuv">
+                                <rect key="frame" x="376" y="271" width="100" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gj-gf-NKb">
+                                <rect key="frame" x="145" y="266" width="30" height="30"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="uVR-j3-hxT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-Po-gCa">
+                                <rect key="frame" x="269" y="531" width="63" height="42"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39607846740000002" green="0.23921570180000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="7K5-Rh-Ps4" firstAttribute="top" secondItem="qzA-i0-che" secondAttribute="bottom" constant="1" id="9Ue-b9-xnR"/>
+                            <constraint firstItem="7K5-Rh-Ps4" firstAttribute="centerX" secondItem="Jst-ZH-hGv" secondAttribute="centerX" id="KL9-9F-Yp5"/>
+                            <constraint firstItem="nwz-Po-gCa" firstAttribute="centerX" secondItem="Jst-ZH-hGv" secondAttribute="centerX" id="O8F-Xv-ke5"/>
+                            <constraint firstItem="EVY-D6-Sws" firstAttribute="leading" secondItem="7K5-Rh-Ps4" secondAttribute="trailing" constant="1" id="P5A-at-QNT"/>
+                            <constraint firstItem="7og-9R-cMs" firstAttribute="leading" secondItem="3Ni-Y4-s30" secondAttribute="trailing" constant="3" id="QUq-JF-ljj"/>
+                            <constraint firstItem="bi8-Pl-mAt" firstAttribute="leading" secondItem="3Ni-Y4-s30" secondAttribute="trailing" constant="1" id="cGs-gx-eKR"/>
+                            <constraint firstItem="nwz-Po-gCa" firstAttribute="top" secondItem="7K5-Rh-Ps4" secondAttribute="bottom" constant="8" id="cvM-cm-4tc"/>
+                            <constraint firstItem="7K5-Rh-Ps4" firstAttribute="top" secondItem="3Ni-Y4-s30" secondAttribute="bottom" constant="1" id="jL9-nn-Ude"/>
+                            <constraint firstItem="7K5-Rh-Ps4" firstAttribute="leading" secondItem="1np-Qr-V3U" secondAttribute="trailing" constant="3" id="may-Pp-Ds4"/>
+                            <constraint firstItem="3Ni-Y4-s30" firstAttribute="leading" secondItem="coh-7G-f7I" secondAttribute="trailing" constant="2" id="tES-rr-U8Y"/>
+                            <constraint firstItem="bzc-kk-tuv" firstAttribute="leading" secondItem="3Ni-Y4-s30" secondAttribute="trailing" constant="1" id="xHd-Se-sDx"/>
+                            <constraint firstItem="3Ni-Y4-s30" firstAttribute="centerX" secondItem="Jst-ZH-hGv" secondAttribute="centerX" id="y0D-6A-7ib"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botcardnum1" destination="HAO-3D-DFR" id="5pu-XD-lfb"/>
+                        <outlet property="botcardnum2" destination="4En-aT-uoI" id="zRZ-KW-yDA"/>
+                        <outlet property="botcardpic" destination="k6X-fv-1ua" id="TiQ-M1-YhF"/>
+                        <outlet property="botdeckcount" destination="EVY-D6-Sws" id="gtY-vl-XRG"/>
+                        <outlet property="cardsinplay" destination="bzc-kk-tuv" id="MzR-o7-oci"/>
+                        <outlet property="gobackbutton" destination="4Gj-gf-NKb" id="r2a-mO-xwk"/>
+                        <outlet property="name" destination="1np-Qr-V3U" id="xMs-gZ-Zi1"/>
+                        <outlet property="topcardnum1" destination="dZo-J3-wqR" id="JSA-yw-ze2"/>
+                        <outlet property="topcardnum2" destination="rq8-eh-5fG" id="xRC-Hp-tFt"/>
+                        <outlet property="topcardpic" destination="78k-hC-zz7" id="6gw-gC-xAa"/>
+                        <outlet property="topdeckcount" destination="coh-7G-f7I" id="bm3-7Y-nlu"/>
+                        <outlet property="warlabel2" destination="nwz-Po-gCa" id="1IF-0P-dNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iG-7J-3zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vbD-tY-tHA">
+                    <connections>
+                        <action selector="Tapped:" destination="DMU-uw-7RP" id="bd9-ri-gG5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="819" y="282"/>
         </scene>
     </scenes>
 </document>

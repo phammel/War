@@ -14,6 +14,8 @@
 		3F2FF4751C17377C00A06662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FF4731C17377C00A06662 /* LaunchScreen.storyboard */; };
 		3F2FF4801C17377D00A06662 /* WarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FF47F1C17377D00A06662 /* WarTests.swift */; };
 		3F2FF48B1C17377D00A06662 /* WarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FF48A1C17377D00A06662 /* WarUITests.swift */; };
+		3F2FF4991C1759EA00A06662 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FF4981C1759EA00A06662 /* View2.swift */; };
+		3F2FF49B1C175BC100A06662 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FF49A1C175BC100A06662 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F2FF4861C17377D00A06662 /* WarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2FF48A1C17377D00A06662 /* WarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarUITests.swift; sourceTree = "<group>"; };
 		3F2FF48C1C17377D00A06662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2FF4981C1759EA00A06662 /* View2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		3F2FF49A1C175BC100A06662 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				3F2FF46A1C17377C00A06662 /* AppDelegate.swift */,
 				3F2FF46C1C17377C00A06662 /* ViewController.swift */,
 				3F2FF46E1C17377C00A06662 /* Main.storyboard */,
+				3F2FF49A1C175BC100A06662 /* Card.swift */,
+				3F2FF4981C1759EA00A06662 /* View2.swift */,
 				3F2FF4711C17377C00A06662 /* Assets.xcassets */,
 				3F2FF4731C17377C00A06662 /* LaunchScreen.storyboard */,
 				3F2FF4761C17377C00A06662 /* Info.plist */,
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2FF46D1C17377C00A06662 /* ViewController.swift in Sources */,
+				3F2FF4991C1759EA00A06662 /* View2.swift in Sources */,
+				3F2FF49B1C175BC100A06662 /* Card.swift in Sources */,
 				3F2FF46B1C17377C00A06662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				3F2FF4911C17377D00A06662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F2FF4921C17377D00A06662 /* Build configuration list for PBXNativeTarget "WarTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				3F2FF4941C17377D00A06662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F2FF4951C17377D00A06662 /* Build configuration list for PBXNativeTarget "WarUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				3F2FF4971C17377D00A06662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
