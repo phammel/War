@@ -240,7 +240,7 @@ class View2: UIViewController {
         
      }//tapped
   //--------------------------------------------
-    
+    //test
     
     
     
